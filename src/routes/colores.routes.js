@@ -4,6 +4,6 @@ import { borrarColor, crearColor, editarColor, leerColores, leerColorPorId } fro
 const router = Router()
 
 router.route('/').get(leerColores).post(crearColor)
-router.route('/:id').get(leerColorPorId).delete.apply(borrarColor).put(editarColor)
+router.route('/:id').get(leerColorPorId).delete(borrarColor).put(editarColor)
 
 export default router;

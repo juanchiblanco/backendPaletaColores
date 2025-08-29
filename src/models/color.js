@@ -1,7 +1,7 @@
 import mongoose, { Schema } from "mongoose";
 
 const colorSchema = new Schema({
-  inputTarea: {
+  nombreColor: {
     type: String,
     required: true,
     unique: true,
