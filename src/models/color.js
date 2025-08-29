@@ -4,8 +4,6 @@ const colorSchema = new Schema({
   inputTarea: {
     type: String,
     required: true,
-    minLength: 3,
-    maxLength: 50,
     unique: true,
     validate: {
       validator: (valor) => {
