@@ -1,7 +1,7 @@
 import mongoose, { Schema } from "mongoose";
 
 const colorSchema = new Schema({
-  nombreColor: {
+  inputColor: {
     type: String,
     required: true,
     unique: true,
